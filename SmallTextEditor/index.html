@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Small Text Editor</title>
+</head>
+<body>
+<div class="container">
+    <div class="options">
+        <button id="bold" class="option-button format">
+            <i class="fa-solid fa-bold"></i>
+        </button>
+        <button id="insertOrderedList" class="option-button">
+            <div class="fa-solid fa-list-ol"></div>
+        </button>
+        <button id="insertUnorderedList" class="option-button">
+            <i class="fa-solid fa-list"></i>
+        </button>
+
+        <button id="justifyLeft" class="option-button align">
+            <i class="fa-solid fa-align-left"></i>
+        </button>
+        <button id="justifyCenter" class="option-button align">
+            <i class="fa-solid fa-align-center"></i>
+        </button>
+        <button id="justifyRight" class="option-button align">
+            <i class="fa-solid fa-align-right"></i>
+        </button>
+        <button id="justifyFull" class="option-button align">
+            <i class="fa-solid fa-align-justify"></i>
+        </button>
+        <select id="formatBlock" class="adv-option-button">
+            <option value="H1">H1</option>
+            <option value="H2">H2</option>
+            <option value="H3">H3</option>
+            <option value="H4">H4</option>
+            <option value="H5">H5</option>
+            <option value="H6">H6</option>
+        </select>
+        <select id="fontName" class="adv-option-button"></select>
+        <select id="fontSize" class="adv-option-button"></select>
+
+        <div class="input-wrapper">
+            <input type="color" id="foreColor" class="adv-option-button">
+            <label for="foreColor">Font Color</label>
+        </div>
+    </div>
+    <div id="text-input" contenteditable="true"></div>
+    <button id="downloadBtn" class="option-button" style="margin-top: 5px">
+        <i class="fa-solid fa-download"></i>
+    </button>
+</div>
+
+</body>
+<script src="script.js"></script>
+</html>

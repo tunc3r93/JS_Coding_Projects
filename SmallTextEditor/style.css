@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: bisque;
+}
+
+.container {
+    background-color: #fff;
+    width: 80vmin;
+    padding: 50px 30px;
+    position:  absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+}
+
+.options{
+    display: flex;
+    flex-wrap:  wrap;
+    align-items: center;
+    gap: 15px;
+}
+
+button {
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-content: center;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(205, 229, 229, 0.8);
+    outline: none;
+    cursor: pointer;
+}
+
+select{
+    padding: 8px;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.options label,
+.options selcect {
+    font-family: sans-serif;
+}
+
+input[type=color] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 40px;
+    height: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=color]::-webkit-color-swatch{
+    border-radius: 15px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+}
+
+input[type=color]::-moz-color-swatch{
+    border-radius: 15px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+}
+
+#text-input{
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    height: 50vh;
+}
+
+.option-button.active {
+    background-color: #9ae7e8;
+    border: 1px solid #9ae7e8;
+    box-shadow: 0 0 3px #888;
+}
