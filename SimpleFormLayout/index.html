@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Event-Registrierung</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+    <h1 id="title">Anmeldung zum Tech-Event 2025</h1>
+    <p id="description">Bitte fülle das folgende Formular aus, um dich für unser Event zu registrieren.</p>
+
+    <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label" for="name">Vollständiger Name</label>
+            <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Max Mustermann"
+                    required
+            />
+        </div>
+
+        <div class="form-group">
+            <label id="email-label" for="email">E-Mail-Adresse</label>
+            <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="beispiel@mail.de"
+                    required
+            />
+        </div>
+
+        <div class="form-group">
+            <label id="number-label" for="number">Teilnehmernummer</label>
+            <input
+                    type="number"
+                    id="number"
+                    name="teilnehmernummer"
+                    min="1"
+                    max="9999"
+                    placeholder="1 - 9999"
+            />
+        </div>
+
+        <div class="form-group">
+            <label for="dropdown">Welche Art von Ticket möchtest du?</label>
+            <select id="dropdown" name="ticket" required>
+                <option disabled selected value="">Wähle eine Option</option>
+                <option value="standard">Standard</option>
+                <option value="vip">VIP</option>
+                <option value="student">Student</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <p>Möchtest du an Workshops teilnehmen?</p>
+            <label><input type="radio" name="workshop" value="ja" required /> Ja</label>
+            <label><input type="radio" name="workshop" value="nein" /> Nein</label>
+        </div>
+
+        <div class="form-group">
+            <p>Welche Themen interessieren dich? (Mehrfachauswahl möglich)</p>
+            <label><input type="checkbox" value="ai" /> Künstliche Intelligenz</label>
+            <label><input type="checkbox" value="webdev" /> Webentwicklung</label>
+            <label><input type="checkbox" value="cloud" /> Cloud-Technologien</label>
+            <label><input type="checkbox" value="security" /> IT-Sicherheit</label>
+        </div>
+
+        <div class="form-group">
+            <label for="comments">Anmerkungen oder Wünsche</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Hier kannst du uns noch etwas mitteilen..."></textarea>
+        </div>
+
+        <button type="submit" id="submit">Registrieren</button>
+    </form>
+</div>
+</body>
+</html>
