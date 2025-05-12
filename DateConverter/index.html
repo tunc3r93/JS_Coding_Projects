@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Converter</title>
+    <link rel="stylesheet" href="script.css">
+</head>
+<body>
+    <div id="container">
+        <label for="date-input">Select Date:</label>
+        <input id="date-input" type="date">
+
+        <label for="select-type">Select Format:</label>
+        <select id="select-type" title="Choose a date format">
+            <option value="" disabled selected>Select a country</option>
+            <option value="DE" title="DD.MM.YYYY">Germany</option>
+            <option value="US" title="MM/DD/YYYY">USA</option>
+            <option value="GB" title="DD/MM/YYYY">UK</option>
+            <option value="CN" title="YYYY-MM-DD">China</option>
+            <option value="JP" title="YYYY/MM/DD">Japan</option>
+            <option value="CA" title="YYYY-MM-DD or DD/MM/YYYY">Canada</option>
+            <option value="FR" title="DD/MM/YYYY">France</option>
+            <option value="CH" title="DD.MM.YYYY">Switzerland</option>
+            <option value="IN" title="DD-MM-YYYY">India</option>
+            <option value="ISO" title="YYYY-MM-DD (Standard)">ISO 8601</option>
+        </select>
+
+        <label for="output">Formatted Date:</label>
+        <input id="output" type="text" readonly>
+    </div>
+</body>
+</html>
